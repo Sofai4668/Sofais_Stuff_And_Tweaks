@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "sofai_sat:block/yellow_shrub"
+  }
+}

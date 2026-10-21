@@ -1,5 +1,7 @@
 package net._sofai.sat;
 
+import net._sofai.sat.block.ModBlocks;
+import net._sofai.sat.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -13,7 +15,8 @@ public class SofaiSStuffAndTweaks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {

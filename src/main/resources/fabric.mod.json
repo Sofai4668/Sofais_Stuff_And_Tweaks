@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "sofai_sat",
+	"version": "Alpha 0",
+	"name": "Sofai's Stuff and Tweaks",
+	"description": "Sofai's Block sets and generation changes",
+	"authors": [
+		"_Sofai"
+	],
+	"contact": {
+		"homepage": "https://x.com/Sofai_Niko",
+		"sources": "later ig"
+
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sofai_sat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net._sofai.sat.SofaiSStuffAndTweaks"
+		],
+		"fabric-datagen": [
+			"net._sofai.sat.SofaiSStuffAndTweaksDataGenerator"
+		]
+	},
+	"mixins": [
+		"sofai_sat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

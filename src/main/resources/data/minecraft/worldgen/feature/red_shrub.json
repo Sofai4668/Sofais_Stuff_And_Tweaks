@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "type": "minecraft:random_block",
+    "blocks": [
+      "minecraft:red_shrub",
+      "sofai_sat:orange_shrub",
+      "sofai_sat:yellow_shrub"
+    ]
+  }
+}

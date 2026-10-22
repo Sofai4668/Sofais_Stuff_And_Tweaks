@@ -38,6 +38,7 @@ public class ModBlocks {
     public static final Block YELLOW_SHRUB = registerBlock("yellow_shrub",
             properties -> new BushBlock(properties.mapColor(MapColor.TERRACOTTA_YELLOW).replaceable().noCollision().instabreak().sound(SoundType.RED_SHRUB).ignitedByLava().pushReaction(PushReaction.POPPED)));
 
+
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SofaiSStuffAndTweaks.MOD_ID, name))));
         registerBlockItem(name, toRegister);

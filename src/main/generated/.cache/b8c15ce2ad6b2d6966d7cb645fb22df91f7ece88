@@ -1,0 +1,11 @@
+// 26.3	-999999999-01-01T00:00:00	Sofai's Stuff and Tweaks/Block Loot Tables
+29b15f38c6d0498896e5e75b06ff9b5cfdb69d39 data/sofai_sat/loot_table/blocks/leaf_litter_block.json
+67d0df4b1bf2304621954f6b6fe3f93e9aeb0f89 data/sofai_sat/loot_table/blocks/orange_moss_block.json
+921e038f06355be0b3cfa1ca5579775dd00c7ac2 data/sofai_sat/loot_table/blocks/orange_moss_carpet.json
+4926337e8dc8a04792583a8e1d257a665d6fecfe data/sofai_sat/loot_table/blocks/orange_shrub.json
+e6a0fd86a0be878293087ea988819de0953ceb52 data/sofai_sat/loot_table/blocks/pebbles.json
+ea296a1edf125de4eaffa468bb77e9530769f5dd data/sofai_sat/loot_table/blocks/red_moss_block.json
+446e16788f7bf6f83d2fb8881d0c50045482b301 data/sofai_sat/loot_table/blocks/red_moss_carpet.json
+24869c8ec4b00f68661249c6f40673a6fec4e646 data/sofai_sat/loot_table/blocks/yellow_moss_block.json
+d2f547a2eaea00bb36c067cb0d42a175127e71d5 data/sofai_sat/loot_table/blocks/yellow_moss_carpet.json
+d3863d27b2785df67b5d237fa00ebb7e1529805b data/sofai_sat/loot_table/blocks/yellow_shrub.json

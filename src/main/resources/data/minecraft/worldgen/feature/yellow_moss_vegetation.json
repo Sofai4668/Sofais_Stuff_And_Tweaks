@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "data": "sofai_sat:yellow_moss_carpet",
+        "weight": 25
+      },
+      {
+        "data": "minecraft:short_grass",
+        "weight": 10
+      },
+      {
+        "data": "sofai_sat:yellow_shrub",
+        "weight": 10
+      }
+    ]
+  }
+}

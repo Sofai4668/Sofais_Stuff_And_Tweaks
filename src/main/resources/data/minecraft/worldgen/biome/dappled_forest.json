@@ -190,8 +190,10 @@
       "minecraft:glow_lichen",
       "minecraft:trees_dappled_forest",
       "minecraft:brown_mushroom_dappled_forest",
-      "minecraft:red_moss_patch",
       "minecraft:patch_red_shrub",
+      "minecraft:yellow_moss_patch",
+      "minecraft:orange_moss_patch",
+      "minecraft:red_moss_patch",
       "minecraft:patch_grass_forest"
     ],
     [

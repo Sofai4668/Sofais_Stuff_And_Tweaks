@@ -65,9 +65,9 @@ public class ModFeature {
                         CaveSurface.FLOOR,
                         ConstantInt.of(1),
                         0.0F,
-                        5,
+                        3,
                         0.3F,
-                        UniformInt.of(1, 2),
+                        UniformInt.of(1, 1),
                         0.75F
                 )
         );
@@ -78,9 +78,9 @@ public class ModFeature {
                         CaveSurface.FLOOR,
                         ConstantInt.of(1),
                         0.0F,
-                        5,
+                        3,
                         0.3F,
-                        UniformInt.of(1, 2),
+                        UniformInt.of(1, 1),
                         0.75F
                 )
         );
@@ -91,9 +91,9 @@ public class ModFeature {
                         CaveSurface.FLOOR,
                         ConstantInt.of(1),
                         0.0F,
-                        5,
+                        3,
                         0.3F,
-                        UniformInt.of(1, 2),
+                        UniformInt.of(1, 1),
                         0.75F
                 )
         );

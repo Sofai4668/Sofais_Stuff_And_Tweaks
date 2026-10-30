@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sofai_sat:item/a_bit_of_orange_moss"
+  }
+}

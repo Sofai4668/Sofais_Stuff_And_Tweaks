@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "moss_bit_to_block",
+  "category": "misc",
+  "key": {
+    "#": "sofai_sat:a_bit_of_orange_moss"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "sofai_sat:orange_moss_block"
+  }
+}

@@ -23,12 +23,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.ORANGE_SHRUB, BlockModelGenerators.PlantType.NOT_TINTED, TextureMapping.cross(ModBlocks.ORANGE_SHRUB));
         blockModelGenerators.createFullAndCarpetBlocks(ModBlocks.YELLOW_MOSS_BLOCK,ModBlocks.YELLOW_MOSS_CARPET);
         blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.YELLOW_SHRUB, BlockModelGenerators.PlantType.NOT_TINTED, TextureMapping.cross(ModBlocks.YELLOW_SHRUB));
+        blockModelGenerators.createTrivialCube(ModBlocks.LEAF_LITTER_BLOCK);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
-        itemModelGenerators.generateFlatItem(ModItems.BELL_PLATE, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.PIE_BASE, ModelTemplates.FLAT_ITEM);
-
+        itemModelGenerators.generateFlatItem(ModItems.A_BIT_OF_MOSS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.A_BIT_OF_RED_MOSS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.A_BIT_OF_ORANGE_MOSS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.A_BIT_OF_YELLOW_MOSS, ModelTemplates.FLAT_ITEM);
     }
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "moss_bit",
+  "category": "misc",
+  "ingredients": [
+    "sofai_sat:orange_moss_block"
+  ],
+  "result": {
+    "id": "sofai_sat:a_bit_of_orange_moss",
+    "count": 4
+  }
+}

@@ -12,5 +12,15 @@
   "item.sofai_sat.orange_shrub": "Orange Shrub",
   "item.sofai_sat.yellow_shrub": "Yellow Shrub",
   "block.sofai_sat.leaf_litter_block": "Leaf Litter Block",
-  "block.sofai_sat.pebbles": "Pebbles"
+  "block.sofai_sat.pebbles": "Pebbles",
+
+  "block.sofai_sat.stone_wall": "Stone Wall",
+  "block.sofai_sat.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",
+  "block.sofai_sat.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
+  "block.sofai_sat.cracked_stone_brick_wall": "Cracked Stone Brick Wall",
+  "block.sofai_sat.smooth_stone_stairs": "Smooth Stone Stairs",
+  "block.sofai_sat.smooth_stone_wall": "Smooth Stone Wall",
+  "block.sofai_sat.polished_granite_wall": "Polished Granite Wall",
+  "block.sofai_sat.polished_diorite_wall": "Polished Diorite Wall",
+  "block.sofai_sat.polished_andesite_wall": "Polished Andesite Wall"
 }

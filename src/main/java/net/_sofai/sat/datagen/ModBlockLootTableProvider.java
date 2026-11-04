@@ -25,5 +25,11 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.YELLOW_SHRUB);
         dropSelf(ModBlocks.LEAF_LITTER_BLOCK);
 
+        dropSelf(ModBlocks.STONE_WALL);
+        dropSelf(ModBlocks.SMOOTH_STONE_STAIRS);
+        dropSelf(ModBlocks.SMOOTH_STONE_WALL);
+        dropSelf(ModBlocks.CRACKED_STONE_BRICK_STAIRS);
+        add(ModBlocks.CRACKED_STONE_BRICK_SLAB, this::createSlabItemTable);
+        dropSelf(ModBlocks.CRACKED_STONE_BRICK_WALL);
     }
 }

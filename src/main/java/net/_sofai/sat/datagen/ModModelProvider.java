@@ -46,6 +46,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.family(Blocks.POLISHED_ANDESITE)
                 .wall(ModBlocks.POLISHED_ANDESITE_WALL)
         ;
+        blockModelGenerators.family(Blocks.DEEPSLATE)
+                .stairs(ModBlocks.DEEPSLATE_STAIRS)
+                .slab(ModBlocks.DEEPSLATE_SLAB)
+                .wall(ModBlocks.DEEPSLATE_WALL)
+        ;
     }
 
     @Override

@@ -52,11 +52,11 @@ public class ModBlocks {
     public static final Block STONE_WALL = registerBlock("stone_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
     public static final Block SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
-            properties -> new StairBlock(ModBlocks.STONE_WALL.defaultBlockState(),properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
+            properties -> new StairBlock(Blocks.SMOOTH_STONE.defaultBlockState(),properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
     public static final Block SMOOTH_STONE_WALL = registerBlock("smooth_stone_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
     public static final Block CRACKED_STONE_BRICK_STAIRS = registerBlock("cracked_stone_brick_stairs",
-            properties -> new StairBlock(ModBlocks.STONE_WALL.defaultBlockState(),properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+            properties -> new StairBlock(Blocks.CRACKED_STONE_BRICKS.defaultBlockState(),properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
     public static final Block CRACKED_STONE_BRICK_SLAB = registerBlock("cracked_stone_brick_slab",
             properties -> new SlabBlock(properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
     public static final Block CRACKED_STONE_BRICK_WALL = registerBlock("cracked_stone_brick_wall",
@@ -67,7 +67,12 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
     public static final Block POLISHED_ANDESITE_WALL = registerBlock("polished_andesite_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
-
+    public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
+            properties -> new StairBlock(Blocks.DEEPSLATE.defaultBlockState(), properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block DEEPSLATE_SLAB = registerBlock("deepslate_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block DEEPSLATE_WALL = registerBlock("deepslate_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
@@ -101,6 +106,7 @@ public class ModBlocks {
             output.insertAfter(Items.POLISHED_GRANITE_STAIRS, POLISHED_GRANITE_WALL);
             output.insertAfter(Items.POLISHED_DIORITE_STAIRS, POLISHED_DIORITE_WALL);
             output.insertAfter(Items.POLISHED_ANDESITE_STAIRS, POLISHED_ANDESITE_WALL);
+            output.insertAfter(Items.DEEPSLATE, DEEPSLATE_STAIRS, DEEPSLATE_SLAB, DEEPSLATE_WALL);
         });
     }
 }

@@ -451,10 +451,15 @@
     "minecraft:black_concrete_slab",
 
     "sofai_sat:stone_wall",
+    "sofai_sat:cracked_stone_brick_stairs",
+    "sofai_sat:cracked_stone_brick_slab",
     "sofai_sat:cracked_stone_brick_wall",
     "sofai_sat:smooth_stone_wall",
     "sofai_sat:polished_granite_wall",
     "sofai_sat:polished_diorite_wall",
-    "sofai_sat:polished_andesite_wall"
+    "sofai_sat:polished_andesite_wall",
+    "sofai_sat:deepslate_stairs",
+    "sofai_sat:deepslate_slab",
+    "sofai_sat:deepslate_wall"
   ]
 }

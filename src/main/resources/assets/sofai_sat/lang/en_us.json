@@ -22,5 +22,8 @@
   "block.sofai_sat.smooth_stone_wall": "Smooth Stone Wall",
   "block.sofai_sat.polished_granite_wall": "Polished Granite Wall",
   "block.sofai_sat.polished_diorite_wall": "Polished Diorite Wall",
-  "block.sofai_sat.polished_andesite_wall": "Polished Andesite Wall"
+  "block.sofai_sat.polished_andesite_wall": "Polished Andesite Wall",
+  "block.sofai_sat.deepslate_stairs": "Deepslate Stairs",
+  "block.sofai_sat.deepslate_slab": "Deepslate Slab",
+  "block.sofai_sat.deepslate_wall": "Deepslate Wall"
 }

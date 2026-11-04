@@ -38,6 +38,7 @@
     "sofai_sat:smooth_stone_wall",
     "sofai_sat:polished_granite_wall",
     "sofai_sat:polished_diorite_wall",
-    "sofai_sat:polished_andesite_wall"
+    "sofai_sat:polished_andesite_wall",
+    "sofai_sat:deepslate_wall"
   ]
 }

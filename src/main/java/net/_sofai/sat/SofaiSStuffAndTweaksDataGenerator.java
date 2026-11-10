@@ -2,6 +2,7 @@ package net._sofai.sat;
 
 import net._sofai.sat.datagen.ModBlockLootTableProvider;
 import net._sofai.sat.datagen.ModModelProvider;
+import net._sofai.sat.datagen.ModRecipeProvider;
 import net._sofai.sat.worldgen.ModFeature;
 import net._sofai.sat.worldgen.ModPlacedFeature;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -16,6 +17,7 @@ public class SofaiSStuffAndTweaksDataGenerator implements DataGeneratorEntrypoin
 
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModBlockLootTableProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 
 	@Override

@@ -61,18 +61,39 @@ public class ModBlocks {
             properties -> new SlabBlock(properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
     public static final Block CRACKED_STONE_BRICK_WALL = registerBlock("cracked_stone_brick_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+
     public static final Block POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.DIRT).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
     public static final Block POLISHED_DIORITE_WALL = registerBlock("polished_diorite_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
     public static final Block POLISHED_ANDESITE_WALL = registerBlock("polished_andesite_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)));
+
     public static final Block DEEPSLATE_STAIRS = registerBlock("deepslate_stairs",
             properties -> new StairBlock(Blocks.DEEPSLATE.defaultBlockState(), properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
     public static final Block DEEPSLATE_SLAB = registerBlock("deepslate_slab",
             properties -> new SlabBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
     public static final Block DEEPSLATE_WALL = registerBlock("deepslate_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block CRACKED_DEEPSLATE_BRICK_STAIRS = registerBlock("cracked_deepslate_brick_stairs",
+            properties -> new StairBlock(Blocks.CRACKED_DEEPSLATE_BRICKS.defaultBlockState(),properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block CRACKED_DEEPSLATE_BRICK_SLAB = registerBlock("cracked_deepslate_brick_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block CRACKED_DEEPSLATE_BRICK_WALL = registerBlock("cracked_deepslate_brick_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block CRACKED_DEEPSLATE_TILE_STAIRS = registerBlock("cracked_deepslate_tile_stairs",
+            properties -> new StairBlock(Blocks.CRACKED_DEEPSLATE_TILES.defaultBlockState(),properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block CRACKED_DEEPSLATE_TILE_SLAB = registerBlock("cracked_deepslate_tile_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+    public static final Block CRACKED_DEEPSLATE_TILE_WALL = registerBlock("cracked_deepslate_tile_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
+
+    public static final Block PACKED_MUD_STAIRS = registerBlock("packed_mud_stairs",
+            properties -> new StairBlock(Blocks.PACKED_MUD.defaultBlockState(),properties.mapColor(MapColor.DIRT).strength(1.0F, 3.0F).sound(SoundType.PACKED_MUD)));
+    public static final Block PACKED_MUD_SLAB = registerBlock("packed_mud_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.DIRT).strength(1.0F, 3.0F).sound(SoundType.PACKED_MUD)));
+    public static final Block PACKED_MUD_WALL = registerBlock("packed_mud_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.DIRT).strength(1.0F, 3.0F).sound(SoundType.PACKED_MUD)));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
@@ -100,13 +121,16 @@ public class ModBlocks {
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
             output.insertAfter(Items.STONE_SLAB, STONE_WALL);
-            output.insertAfter(Items.STONE_BRICK_WALL, CRACKED_STONE_BRICK_STAIRS, CRACKED_STONE_BRICK_SLAB, CRACKED_STONE_BRICK_WALL);
+            output.insertAfter(Items.CRACKED_STONE_BRICKS, CRACKED_STONE_BRICK_STAIRS, CRACKED_STONE_BRICK_SLAB, CRACKED_STONE_BRICK_WALL);
             output.insertAfter(Items.SMOOTH_STONE, SMOOTH_STONE_STAIRS);
             output.insertAfter(Items.SMOOTH_STONE_SLAB, SMOOTH_STONE_WALL);
             output.insertAfter(Items.POLISHED_GRANITE_STAIRS, POLISHED_GRANITE_WALL);
             output.insertAfter(Items.POLISHED_DIORITE_STAIRS, POLISHED_DIORITE_WALL);
             output.insertAfter(Items.POLISHED_ANDESITE_STAIRS, POLISHED_ANDESITE_WALL);
             output.insertAfter(Items.DEEPSLATE, DEEPSLATE_STAIRS, DEEPSLATE_SLAB, DEEPSLATE_WALL);
+            output.insertAfter(Items.CRACKED_DEEPSLATE_BRICKS, CRACKED_DEEPSLATE_BRICK_STAIRS, CRACKED_DEEPSLATE_BRICK_SLAB, CRACKED_DEEPSLATE_BRICK_WALL);
+            output.insertAfter(Items.CRACKED_DEEPSLATE_TILES, CRACKED_DEEPSLATE_TILE_STAIRS, CRACKED_DEEPSLATE_TILE_SLAB, CRACKED_DEEPSLATE_TILE_WALL);
+            output.insertAfter(Items.PACKED_MUD, PACKED_MUD_STAIRS, PACKED_MUD_SLAB, PACKED_MUD_WALL);
         });
     }
 }

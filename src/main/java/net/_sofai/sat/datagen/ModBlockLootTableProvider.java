@@ -31,11 +31,23 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.CRACKED_STONE_BRICK_STAIRS);
         add(ModBlocks.CRACKED_STONE_BRICK_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.CRACKED_STONE_BRICK_WALL);
+
         dropSelf(ModBlocks.POLISHED_GRANITE_WALL);
         dropSelf(ModBlocks.POLISHED_DIORITE_WALL);
         dropSelf(ModBlocks.POLISHED_ANDESITE_WALL);
+
         dropSelf(ModBlocks.DEEPSLATE_STAIRS);
         add(ModBlocks.DEEPSLATE_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.DEEPSLATE_WALL);
+        dropSelf(ModBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS);
+        add(ModBlocks.CRACKED_DEEPSLATE_BRICK_SLAB, this::createSlabItemTable);
+        dropSelf(ModBlocks.CRACKED_DEEPSLATE_BRICK_WALL);
+        dropSelf(ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS);
+        add(ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB, this::createSlabItemTable);
+        dropSelf(ModBlocks.CRACKED_DEEPSLATE_TILE_WALL);
+
+        dropSelf(ModBlocks.PACKED_MUD_STAIRS);
+        add(ModBlocks.PACKED_MUD_SLAB, this::createSlabItemTable);
+        dropSelf(ModBlocks.PACKED_MUD_WALL);
     }
 }

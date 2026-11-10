@@ -13,7 +13,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.block.Blocks;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
@@ -241,5 +240,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .save(output, "smooth_red_sandstone_wall_from_stonecutting");
                 }
             };
-        };
-    }
+        }
+}

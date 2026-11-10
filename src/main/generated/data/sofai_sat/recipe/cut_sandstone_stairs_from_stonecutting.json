@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "minecraft:cut_sandstone",
+  "result": {
+    "id": "sofai_sat:cut_sandstone_stairs"
+  }
+}

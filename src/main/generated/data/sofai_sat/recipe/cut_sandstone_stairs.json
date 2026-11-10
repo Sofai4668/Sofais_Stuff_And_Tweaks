@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "sandstone",
+  "key": {
+    "#": "minecraft:cut_sandstone"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "sofai_sat:cut_sandstone_stairs"
+  }
+}

@@ -67,6 +67,20 @@ public class ModModelProvider extends FabricModelProvider {
                 .slab(ModBlocks.PACKED_MUD_SLAB)
                 .wall(ModBlocks.PACKED_MUD_WALL)
         ;
+        blockModelGenerators.family(Blocks.SMOOTH_SANDSTONE)
+                .wall(ModBlocks.SMOOTH_SANDSTONE_WALL)
+        ;
+        blockModelGenerators.family(Blocks.CUT_RED_SANDSTONE)
+                .stairs(ModBlocks.CUT_RED_SANDSTONE_STAIRS)
+                .wall(ModBlocks.CUT_SANDSTONE_WALL)
+        ;
+        blockModelGenerators.family(Blocks.SMOOTH_RED_SANDSTONE)
+                .wall(ModBlocks.SMOOTH_RED_SANDSTONE_WALL)
+        ;
+        blockModelGenerators.family(Blocks.CUT_RED_SANDSTONE)
+                .stairs(ModBlocks.CUT_RED_SANDSTONE_STAIRS)
+                .wall(ModBlocks.CUT_RED_SANDSTONE_WALL)
+        ;
     }
 
     @Override

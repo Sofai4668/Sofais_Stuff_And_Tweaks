@@ -50,5 +50,14 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.PACKED_MUD_STAIRS);
         add(ModBlocks.PACKED_MUD_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.PACKED_MUD_WALL);
+
+
+        dropSelf(ModBlocks.SMOOTH_SANDSTONE_WALL);
+        add(ModBlocks.CUT_SANDSTONE_STAIRS, this::createSlabItemTable);
+        dropSelf(ModBlocks.CUT_SANDSTONE_WALL);
+
+        dropSelf(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
+        add(ModBlocks.CUT_RED_SANDSTONE_STAIRS, this::createSlabItemTable);
+        dropSelf(ModBlocks.CUT_RED_SANDSTONE_WALL);
     }
 }

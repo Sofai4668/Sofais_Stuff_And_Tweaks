@@ -42,6 +42,10 @@
     "sofai_sat:deepslate_wall",
     "sofai_sat:cracked_deepslate_brick_wall",
     "sofai_sat:cracked_deepslate_tile_wall",
-    "sofai_sat:packed_mud_wall"
+    "sofai_sat:packed_mud_wall",
+    "sofai_sat:smooth_sandstone_wall",
+    "sofai_sat:cut_sandstone_wall",
+    "sofai_sat:smooth_red_sandstone_wall",
+    "sofai_sat:cut_red_sandstone_wall"
   ]
 }

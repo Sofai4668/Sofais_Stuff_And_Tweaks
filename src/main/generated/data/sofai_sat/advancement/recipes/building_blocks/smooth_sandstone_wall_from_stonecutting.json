@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sandstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:sandstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "sofai_sat:smooth_sandstone_wall_from_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sandstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sofai_sat:smooth_sandstone_wall_from_stonecutting"
+    ]
+  }
+}

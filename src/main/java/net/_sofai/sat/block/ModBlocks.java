@@ -97,6 +97,19 @@ public class ModBlocks {
     public static final Block PACKED_MUD_WALL = registerBlock("packed_mud_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.DIRT).strength(1.0F, 3.0F).sound(SoundType.PACKED_MUD)));
 
+    public static final Block SMOOTH_SANDSTONE_WALL = registerBlock("smooth_sandstone_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.8F)));
+    public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
+            properties -> new StairBlock(Blocks.CUT_SANDSTONE.defaultBlockState(), properties.mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.8F)));
+    public static final Block CUT_SANDSTONE_WALL = registerBlock("cut_sandstone_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.8F)));
+
+    public static final Block SMOOTH_RED_SANDSTONE_WALL = registerBlock("smooth_red_sandstone_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.8F)));
+    public static final Block CUT_RED_SANDSTONE_STAIRS = registerBlock("cut_red_sandstone_stairs",
+            properties -> new StairBlock(Blocks.CUT_RED_SANDSTONE.defaultBlockState(), properties.mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.8F)));
+    public static final Block CUT_RED_SANDSTONE_WALL = registerBlock("cut_red_sandstone_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.8F)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SofaiSStuffAndTweaks.MOD_ID, name))));

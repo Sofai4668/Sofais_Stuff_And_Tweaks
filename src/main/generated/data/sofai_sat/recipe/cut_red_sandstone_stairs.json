@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "red_sandstone",
+  "key": {
+    "#": "minecraft:cut_red_sandstone"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "sofai_sat:cut_red_sandstone_stairs"
+  }
+}

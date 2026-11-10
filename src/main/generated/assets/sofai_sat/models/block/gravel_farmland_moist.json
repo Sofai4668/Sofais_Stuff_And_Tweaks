@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_cube_bottom_top_indented",
+  "textures": {
+    "bottom": "minecraft:block/gravel",
+    "side": "minecraft:block/gravel",
+    "top": "sofai_sat:block/gravel_farmland_moist"
+  }
+}

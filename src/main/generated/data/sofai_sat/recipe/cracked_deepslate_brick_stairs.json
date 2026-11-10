@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cracked_deepslate_bricks",
+  "key": {
+    "#": "minecraft:cracked_deepslate_bricks"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "sofai_sat:cracked_deepslate_brick_stairs"
+  }
+}

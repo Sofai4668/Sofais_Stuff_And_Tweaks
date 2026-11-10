@@ -25,5 +25,14 @@
   "block.sofai_sat.polished_andesite_wall": "Polished Andesite Wall",
   "block.sofai_sat.deepslate_stairs": "Deepslate Stairs",
   "block.sofai_sat.deepslate_slab": "Deepslate Slab",
-  "block.sofai_sat.deepslate_wall": "Deepslate Wall"
+  "block.sofai_sat.deepslate_wall": "Deepslate Wall",
+  "block.sofai_sat.cracked_deepslate_brick_stairs": "Cracked Deepslate Brick Stairs",
+  "block.sofai_sat.cracked_deepslate_brick_slab": "Cracked Deepslate Brick Slab",
+  "block.sofai_sat.cracked_deepslate_brick_wall": "Cracked Deepslate Brick Wall",
+  "block.sofai_sat.cracked_deepslate_tile_stairs": "Cracked Deepslate Tile Stairs",
+  "block.sofai_sat.cracked_deepslate_tile_slab": "Cracked Deepslate Tile Slab",
+  "block.sofai_sat.cracked_deepslate_tile_wall": "Cracked Deepslate Tile Wall",
+  "block.sofai_sat.packed_mud_stairs": "Packed Mud Stairs",
+  "block.sofai_sat.packed_mud_slab": "Packed Mud Slab",
+  "block.sofai_sat.packed_mud_wall": "Packed Mud Wall"
 }

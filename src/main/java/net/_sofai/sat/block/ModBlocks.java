@@ -47,6 +47,8 @@ public class ModBlocks {
     //other
     public static final Block LEAF_LITTER_BLOCK = registerBlock("leaf_litter_block",
             properties -> new ColoredFallingBlock(new ColorRGBA(-11715803),properties.ignitedByLava().mapColor(MapColor.PODZOL).noCollision().speedFactor(0.4F).jumpFactor(0.5F).friction(0.8F).fallDistanceReduction(100).strength(0.1F).sound(SoundType.LEAF_LITTER).pushReaction(PushReaction.PUSH).noOcclusion()));
+    public static final Block GRAVEL_FARMLAND = registerBlock("gravel_farmland",
+            properties -> new FarmlandBlock(Blocks.GRAVEL, properties.mapColor(MapColor.STONE).randomTicks().strength(0.6F).sound(SoundType.GRAVEL).isSuffocating(Blocks::always)));
 
     //missing variants from vanilla
     public static final Block STONE_WALL = registerBlock("stone_wall",
@@ -118,6 +120,7 @@ public class ModBlocks {
         //tabs and placement
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
             output.insertAfter(Items.WILDFLOWERS, LEAF_LITTER_BLOCK);
+            output.insertAfter(Items.FARMLAND, GRAVEL_FARMLAND);
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
             output.insertAfter(Items.STONE_SLAB, STONE_WALL);

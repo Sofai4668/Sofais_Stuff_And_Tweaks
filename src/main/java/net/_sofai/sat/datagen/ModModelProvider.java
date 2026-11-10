@@ -25,6 +25,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createCrossBlockWithDefaultItem(ModBlocks.YELLOW_SHRUB, BlockModelGenerators.PlantType.NOT_TINTED, TextureMapping.cross(ModBlocks.YELLOW_SHRUB));
 
         blockModelGenerators.createTrivialCube(ModBlocks.LEAF_LITTER_BLOCK);
+        blockModelGenerators.createFarmland(ModBlocks.GRAVEL_FARMLAND, TextureMapping.getBlockTexture(Blocks.GRAVEL), TextureMapping.getBlockTexture(Blocks.GRAVEL), ModelTemplates.CUBE_BOTTOM_TOP_INDENTED);
 
         blockModelGenerators.family(Blocks.STONE).wall(ModBlocks.STONE_WALL);
 

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "sofai_sat:block/gravel_farmland"
+    },
+    "moisture=1": {
+      "model": "sofai_sat:block/gravel_farmland"
+    },
+    "moisture=2": {
+      "model": "sofai_sat:block/gravel_farmland"
+    },
+    "moisture=3": {
+      "model": "sofai_sat:block/gravel_farmland"
+    },
+    "moisture=4": {
+      "model": "sofai_sat:block/gravel_farmland"
+    },
+    "moisture=5": {
+      "model": "sofai_sat:block/gravel_farmland"
+    },
+    "moisture=6": {
+      "model": "sofai_sat:block/gravel_farmland"
+    },
+    "moisture=7": {
+      "model": "sofai_sat:block/gravel_farmland_moist"
+    }
+  }
+}

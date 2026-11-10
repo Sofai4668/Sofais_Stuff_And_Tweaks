@@ -23,6 +23,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.YELLOW_MOSS_CARPET);
         dropSelf(ModBlocks.ORANGE_SHRUB);
         dropSelf(ModBlocks.YELLOW_SHRUB);
+
         dropSelf(ModBlocks.LEAF_LITTER_BLOCK);
 
         dropSelf(ModBlocks.STONE_WALL);

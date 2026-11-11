@@ -23,7 +23,6 @@ public class ModItems {
     public static final Item A_BIT_OF_ORANGE_MOSS = registerItem("a_bit_of_orange_moss", properties -> new Item(properties.food(new FoodProperties(0, 1, true)).compostable(ContextIntProviders.COMPOSTABLE_LOW)));
     public static final Item A_BIT_OF_YELLOW_MOSS = registerItem("a_bit_of_yellow_moss", properties -> new Item(properties.food(new FoodProperties(0, 1, true)).compostable(ContextIntProviders.COMPOSTABLE_LOW)));
 
-
     //Compostable
     public static final Item RED_MOSS_BLOCK = registerItem("red_moss_block",
             properties -> new BlockItem(ModBlocks.RED_MOSS_BLOCK, properties.compostable(ContextIntProviders.COMPOSTABLE_MEDIUM)));

@@ -37,5 +37,8 @@
   "block.sofai_sat.packed_mud_wall": "Packed Mud Wall",
   "block.sofai_sat.cut_sandstone_stairs": "Smooth Sandstone Stairs",
   "block.sofai_sat.cut_sandstone_wall": "Cut Sandstone Wall",
-  "block.sofai_sat.smooth_sandstone_wall": "Smooth Sandstone Wall"
+  "block.sofai_sat.smooth_sandstone_wall": "Smooth Sandstone Wall",
+  "block.sofai_sat.cut_red_sandstone_stairs": "Smooth Red Sandstone Stairs",
+  "block.sofai_sat.cut_red_sandstone_wall": "Cut Red Sandstone Wall",
+  "block.sofai_sat.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall"
 }

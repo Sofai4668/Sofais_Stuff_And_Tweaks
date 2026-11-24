@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "sofai_sat:block/sewing_table",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "sofai_sat:block/sewing_table"
+    },
+    "facing=south": {
+      "model": "sofai_sat:block/sewing_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sofai_sat:block/sewing_table",
+      "y": 270
+    }
+  }
+}

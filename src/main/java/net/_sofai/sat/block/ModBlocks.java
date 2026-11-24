@@ -1,6 +1,7 @@
 package net._sofai.sat.block;
 
 import net._sofai.sat.SofaiSStuffAndTweaks;
+import net._sofai.sat.block.custom.SewingTable;
 import net._sofai.sat.item.ModItems;
 import net._sofai.sat.worldgen.ModFeature;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
@@ -59,6 +60,9 @@ public class ModBlocks {
             properties -> new DoorBlock(BlockSetType.COPPER,properties.sound(SoundType.COPPER_GRATE).mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(5.0F).noOcclusion().isValidSpawn(Blocks::never)));
     public static final Block IRON_GATE_TRAPDOOR = registerBlock("iron_grate_trapdoor",
             properties -> new TrapDoorBlock(BlockSetType.COPPER,properties.sound(SoundType.COPPER_GRATE).mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(5.0F).noOcclusion().isValidSpawn(Blocks::never)));
+
+    public static final Block SEWING_TABLE = registerBlock("sewing_table",
+            properties -> new SewingTable(properties.mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.5F).sound(SoundType.WOOD).ignitedByLava()));
 
     //missing variants from vanilla
     public static final Block STONE_WALL = registerBlock("stone_wall",
@@ -165,6 +169,9 @@ public class ModBlocks {
             output.insertAfter(Items.CUT_RED_SANDSTONE_SLAB, CUT_RED_SANDSTONE_WALL);
 
             output.insertAfter(Items.IRON_BLOCK, IRON_GRATE, IRON_GATE_DOOR, IRON_GATE_TRAPDOOR);
+        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(output -> {
+            output.insertAfter(Items.LOOM, SEWING_TABLE);
         });
     }
 }

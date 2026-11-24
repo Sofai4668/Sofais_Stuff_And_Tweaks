@@ -8,6 +8,7 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.world.level.block.Blocks;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -28,6 +29,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.IRON_GRATE);
         blockModelGenerators.createTrapdoor(ModBlocks.IRON_GATE_TRAPDOOR);
         blockModelGenerators.createDoor(ModBlocks.IRON_GATE_DOOR);
+
+        blockModelGenerators.createHorizontallyRotatedBlock(ModBlocks.SEWING_TABLE, TexturedModel.ORIENTABLE);
 
         blockModelGenerators.family(Blocks.STONE).wall(ModBlocks.STONE_WALL);
 

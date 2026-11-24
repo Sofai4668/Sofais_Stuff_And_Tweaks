@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "sofai_sat:block/sewing_table_bottom",
+    "front": "sofai_sat:block/sewing_table_front",
+    "side": "sofai_sat:block/sewing_table_side",
+    "top": "sofai_sat:block/sewing_table_top"
+  }
+}

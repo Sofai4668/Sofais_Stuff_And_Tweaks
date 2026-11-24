@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_bottom",
+  "textures": {
+    "texture": "sofai_sat:block/iron_grate_trapdoor"
+  }
+}

@@ -91,6 +91,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                 //stone cutter
+                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.IRON_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_GRATE,4)
+                        .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))
+                        .group("iron")
+                        .save(output, "iron_gate_from_stonecutting");
+                SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.IRON_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_GATE_TRAPDOOR,8)
+                        .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))
+                        .group("iron")
+                        .save(output, "iron_gate_trapdoor_from_raw_stonecutting");
+                SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.IRON_GRATE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_GATE_TRAPDOOR,2)
+                        .unlockedBy(getHasName(Blocks.IRON_BLOCK), has(Blocks.IRON_BLOCK))
+                        .group("iron")
+                        .save(output, "iron_gate_trapdoor_from_stonecutting");
+
+
+
                 SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.STONE), RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_WALL,1)
                         .unlockedBy(getHasName(Blocks.STONE), has(Blocks.STONE))
                         .group("stone")

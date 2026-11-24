@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "sofai_sat:iron_grate_door",
+            "state": {
+              "half": "lower"
+            }
+          },
+          "name": "sofai_sat:iron_grate_door"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

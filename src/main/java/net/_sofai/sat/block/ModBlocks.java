@@ -17,6 +17,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -47,8 +48,17 @@ public class ModBlocks {
     //other
     public static final Block LEAF_LITTER_BLOCK = registerBlock("leaf_litter_block",
             properties -> new ColoredFallingBlock(new ColorRGBA(-11715803),properties.ignitedByLava().mapColor(MapColor.PODZOL).noCollision().speedFactor(0.4F).jumpFactor(0.5F).friction(0.8F).fallDistanceReduction(100).strength(0.1F).sound(SoundType.LEAF_LITTER).pushReaction(PushReaction.PUSH).noOcclusion()));
+    public static final Block GRAVEL_PATH = registerBlock("gravel_path",
+            properties -> new PathBlock(Blocks.GRAVEL, properties.mapColor(MapColor.STONE).strength(0.6F).sound(SoundType.GRAVEL).isSuffocating(Blocks::always)));
     public static final Block GRAVEL_FARMLAND = registerBlock("gravel_farmland",
             properties -> new FarmlandBlock(Blocks.GRAVEL, properties.mapColor(MapColor.STONE).randomTicks().strength(0.6F).sound(SoundType.GRAVEL).isSuffocating(Blocks::always)));
+    public static final Block IRON_GRATE = registerBlock("iron_grate",
+            properties -> new WaterloggedTransparentBlock(properties
+                    .strength(3.0F, 6.0F).sound(SoundType.COPPER_GRATE).mapColor(MapColor.STONE).noOcclusion().requiresCorrectToolForDrops().isValidSpawn(Blocks::never).isRedstoneConductor(Blocks::never).isSuffocating(Blocks::never)));
+    public static final Block IRON_GATE_DOOR = registerBlock("iron_grate_door",
+            properties -> new DoorBlock(BlockSetType.COPPER,properties.sound(SoundType.COPPER_GRATE).mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(5.0F).noOcclusion().isValidSpawn(Blocks::never)));
+    public static final Block IRON_GATE_TRAPDOOR = registerBlock("iron_grate_trapdoor",
+            properties -> new TrapDoorBlock(BlockSetType.COPPER,properties.sound(SoundType.COPPER_GRATE).mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(5.0F).noOcclusion().isValidSpawn(Blocks::never)));
 
     //missing variants from vanilla
     public static final Block STONE_WALL = registerBlock("stone_wall",
@@ -147,6 +157,14 @@ public class ModBlocks {
             output.insertAfter(Items.CRACKED_DEEPSLATE_BRICKS, CRACKED_DEEPSLATE_BRICK_STAIRS, CRACKED_DEEPSLATE_BRICK_SLAB, CRACKED_DEEPSLATE_BRICK_WALL);
             output.insertAfter(Items.CRACKED_DEEPSLATE_TILES, CRACKED_DEEPSLATE_TILE_STAIRS, CRACKED_DEEPSLATE_TILE_SLAB, CRACKED_DEEPSLATE_TILE_WALL);
             output.insertAfter(Items.PACKED_MUD, PACKED_MUD_STAIRS, PACKED_MUD_SLAB, PACKED_MUD_WALL);
+            output.insertAfter(Items.SMOOTH_SANDSTONE_SLAB, SMOOTH_SANDSTONE_WALL);
+            output.insertAfter(Items.CUT_SANDSTONE, CUT_SANDSTONE_STAIRS);
+            output.insertAfter(Items.CUT_STANDSTONE_SLAB, CUT_SANDSTONE_WALL);
+            output.insertAfter(Items.SMOOTH_RED_SANDSTONE_SLAB, SMOOTH_RED_SANDSTONE_WALL);
+            output.insertAfter(Items.CUT_RED_SANDSTONE, CUT_RED_SANDSTONE_STAIRS);
+            output.insertAfter(Items.CUT_RED_SANDSTONE_SLAB, CUT_RED_SANDSTONE_WALL);
+
+            output.insertAfter(Items.IRON_BLOCK, IRON_GRATE, IRON_GATE_DOOR, IRON_GATE_TRAPDOOR);
         });
     }
 }

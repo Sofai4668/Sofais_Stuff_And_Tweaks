@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "sofai_sat:block/iron_grate_door_bottom",
+    "top": "sofai_sat:block/iron_grate_door_top"
+  }
+}

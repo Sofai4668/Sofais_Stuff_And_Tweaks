@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "sofai_sat:iron_grate",
+  "result": {
+    "count": 2,
+    "id": "sofai_sat:iron_grate_trapdoor"
+  }
+}

@@ -13,6 +13,9 @@
   "item.sofai_sat.yellow_shrub": "Yellow Shrub",
   "block.sofai_sat.leaf_litter_block": "Leaf Litter Block",
   "block.sofai_sat.pebbles": "Pebbles",
+  "sofai_sat:iron_grate": "Iron Gate",
+  "sofai_sat:iron_grate_door": "Iron Gate Door",
+  "sofai_sat:iron_grate_trapdoor": "Iron Gate Trapdoor",
 
   "block.sofai_sat.stone_wall": "Stone Wall",
   "block.sofai_sat.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",

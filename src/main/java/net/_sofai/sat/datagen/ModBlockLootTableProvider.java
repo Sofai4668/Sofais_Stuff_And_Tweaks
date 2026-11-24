@@ -4,6 +4,7 @@ import net._sofai.sat.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -25,6 +26,11 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.YELLOW_SHRUB);
 
         dropSelf(ModBlocks.LEAF_LITTER_BLOCK);
+        dropOther(ModBlocks.GRAVEL_PATH, Blocks.GRAVEL);
+        dropOther(ModBlocks.GRAVEL_FARMLAND, Blocks.GRAVEL);
+        dropSelf(ModBlocks.IRON_GRATE);
+        dropSelf(ModBlocks.IRON_GATE_TRAPDOOR);
+        add(ModBlocks.IRON_GATE_DOOR, this::createDoorTable);
 
         dropSelf(ModBlocks.STONE_WALL);
         dropSelf(ModBlocks.SMOOTH_STONE_STAIRS);

@@ -21,6 +21,9 @@
 		],
 		"fabric-datagen": [
 			"net._sofai.sat.SofaiSStuffAndTweaksDataGenerator"
+		],
+		"client": [
+			"net._sofai.sat.SofaiSStuffAndTweaksClient"
 		]
 	},
 	"mixins": [

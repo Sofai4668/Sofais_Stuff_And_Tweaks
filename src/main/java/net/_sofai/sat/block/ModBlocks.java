@@ -147,7 +147,7 @@ public class ModBlocks {
         //tabs and placement
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
             output.insertAfter(Items.WILDFLOWERS, LEAF_LITTER_BLOCK);
-            output.insertAfter(Items.FARMLAND, GRAVEL_FARMLAND);
+            output.insertAfter(Items.GRAVEL, GRAVEL_FARMLAND, GRAVEL_PATH);
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
             output.insertAfter(Items.STONE_SLAB, STONE_WALL);

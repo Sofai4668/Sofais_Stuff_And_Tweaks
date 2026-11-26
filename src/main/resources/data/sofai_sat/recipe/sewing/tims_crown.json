@@ -1,0 +1,21 @@
+{
+  "type": "sofai_sat:sewing",
+  "ingredient": "minecraft:golden_helmet",
+  "components": {
+    "minecraft:item_model": "sofai_sat:golden_crown",
+    "minecraft:equippable": {
+      "slot": "head",
+      "asset_id": "sofai_sat:tim"
+    },
+    "minecraft:item_name": {
+      "text": "Golden Crown"
+    },
+    "minecraft:lore": [
+      {
+        "text": "To my king and his kind heart",
+        "color": "gold",
+        "italic": false
+      }
+    ]
+  }
+}

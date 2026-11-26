@@ -1,17 +1,13 @@
 package net._sofai.sat.block.custom;
 
-import com.mojang.serialization.MapCodec;
+import net._sofai.sat.gui.SewingTableMenu;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
-import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.inventory.LoomMenu;
-import net.minecraft.world.inventory.StonecutterMenu;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -21,7 +17,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class SewingTable extends HorizontalDirectionalBlock {
-    private static final Component CONTAINER_TITLE = Component.translatable("container.loom");
+    private static final Component CONTAINER_TITLE = Component.translatable("container.sofai_sat.sewing_table");
 
     public SewingTable(final BlockBehaviour.Properties properties) {
         super(properties);
@@ -40,9 +36,10 @@ public class SewingTable extends HorizontalDirectionalBlock {
     @Override
     protected MenuProvider getMenuProvider(final BlockState state, final Level level, final BlockPos pos) {
         return new SimpleMenuProvider(
-                (containerId, inventory, player) -> new StonecutterMenu(containerId, inventory, ContainerLevelAccess.create(level, pos)), CONTAINER_TITLE
+                (containerId, inventory, player) -> new SewingTableMenu(containerId, inventory, ContainerLevelAccess.create(level, pos)), CONTAINER_TITLE
         );
     }
+
 
     @Override
     public BlockState getStateForPlacement(final BlockPlaceContext context) {

@@ -43,5 +43,7 @@
   "block.sofai_sat.smooth_sandstone_wall": "Smooth Sandstone Wall",
   "block.sofai_sat.cut_red_sandstone_stairs": "Smooth Red Sandstone Stairs",
   "block.sofai_sat.cut_red_sandstone_wall": "Cut Red Sandstone Wall",
-  "block.sofai_sat.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall"
+  "block.sofai_sat.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall",
+
+  "container.sofai_sat.sewing_table" : "Sewing Table"
 }

@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"textureSize": [64, 64],
+	"textureSize": [128, 64],
 	"models": [
 		{
 			"part": "head",
@@ -17,6 +17,21 @@
 			"invertAxis": "xy",
 			"translate": [0, -24, 0],
 			"boxes": [
+				{
+					"coordinates": [-4, 32, -4, 8, 8, 0],
+					"uvNorth": [0, 0, 8, 8],
+					"uvSouth": [8, 0, 0, 8]
+				},
+				{
+					"coordinates": [-4, 32, 0, 8, 8, 0],
+					"uvNorth": [24, 0, 32, 8],
+					"uvSouth": [32, 0, 24, 8]
+				},
+				{
+					"coordinates": [-4, 32, 4, 8, 8, 0],
+					"uvNorth": [32, 0, 40, 8],
+					"uvSouth": [40, 0, 32, 8]
+				},
 				{"coordinates": [-4, 24, -4, 8, 8, 8], "textureOffset": [32, 0], "sizeAdd": 0.501}
 			]
 		},
@@ -37,7 +52,9 @@
 			"translate": [-5, -22, 0],
 			"boxes": [
 				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 32], "sizeAdd": 0.501},
-				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 16], "sizeAdd": 0.01}
+				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 16], "sizeAdd": 0.01},
+				{"coordinates": [4, 12, -2, 3, 12, 4], "textureOffset": [107, 16], "sizeAdd": 0.01},
+				{"coordinates": [4, 12, -2, 3, 12, 4], "textureOffset": [107, 32], "sizeAdd": 0.501}
 			]
 		},
 		{
@@ -47,7 +64,9 @@
 			"translate": [5, -22, 0],
 			"boxes": [
 				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [48, 48], "sizeAdd": 0.501},
-				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [32, 48], "sizeAdd": 0.01}
+				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [32, 48], "sizeAdd": 0.01},
+				{"coordinates": [-7, 12, -2, 3, 12, 4], "textureOffset": [98, 48], "sizeAdd": 0.01},
+				{"coordinates": [-7, 12, -2, 3, 12, 4], "textureOffset": [114, 48], "sizeAdd": 0.501}
 			]
 		},
 		{

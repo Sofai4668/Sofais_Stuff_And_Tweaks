@@ -3,6 +3,7 @@ package net._sofai.sat;
 import net._sofai.sat.block.ModBlocks;
 import net._sofai.sat.item.ModItems;
 import net._sofai.sat.recipe.ModRecipes;
+import net._sofai.sat.stat.ModStats;
 import net._sofai.sat.worldgen.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -20,7 +21,7 @@ public class SofaiSStuffAndTweaks implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModRecipes.registerModRecipes();
-
+		ModStats.registerStats();
 		ModWorldGeneration.generateModWorldGen();
 	}
 

@@ -1,0 +1,14 @@
+{
+  "type": "sofai_sat:sewing",
+  "ingredient": "minecraft:leather_leggings",
+  "components": {
+    "minecraft:item_model": "sofai_sat:armor_body_slim",
+    "minecraft:equippable": {
+      "slot": "legs",
+      "asset_id": "sofai_sat:body_slim"
+    },
+    "minecraft:item_name": {
+      "text": "Simple Slim Bodysuit"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "humanoid_leggings": [
+      {
+        "texture": "sofai_sat:body_wide",
+        "dyeable": {
+          "color_when_undyed": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"textureSize": [64, 64],
+	"textureSize": [128, 64],
 	"models": [
 		{
 			"part": "head",
@@ -37,7 +37,9 @@
 			"translate": [-5, -22, 0],
 			"boxes": [
 				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 32], "sizeAdd": 0.501},
-				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 16], "sizeAdd": 0.01}
+				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 16], "sizeAdd": 0.01},
+				{"coordinates": [4, 12, -2, 3, 12, 4], "textureOffset": [107, 16], "sizeAdd": 0.01},
+				{"coordinates": [4, 12, -2, 3, 12, 4], "textureOffset": [107, 32], "sizeAdd": 0.501}
 			]
 		},
 		{
@@ -47,7 +49,9 @@
 			"translate": [5, -22, 0],
 			"boxes": [
 				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [48, 48], "sizeAdd": 0.501},
-				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [32, 48], "sizeAdd": 0.01}
+				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [32, 48], "sizeAdd": 0.01},
+				{"coordinates": [-7, 12, -2, 3, 12, 4], "textureOffset": [98, 48], "sizeAdd": 0.01},
+				{"coordinates": [-7, 12, -2, 3, 12, 4], "textureOffset": [114, 48], "sizeAdd": 0.501}
 			]
 		},
 		{

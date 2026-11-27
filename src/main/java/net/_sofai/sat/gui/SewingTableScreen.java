@@ -1,9 +1,8 @@
 package net._sofai.sat.gui;
 
+import net._sofai.sat.SofaiSStuffAndTweaks;
 import net._sofai.sat.SofaiSStuffAndTweaksClient;
-import net._sofai.sat.recipe.ModRecipes;
 import net._sofai.sat.recipe.SewingTableRecipe;
-import net.fabricmc.fabric.api.client.recipe.v1.sync.ClientRecipeSynchronizedEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -22,12 +21,12 @@ import net.minecraft.world.item.crafting.SingleRecipeInput;
 import java.util.List;
 
 public class SewingTableScreen extends AbstractContainerScreen<SewingTableMenu> {
-    private static final Identifier BG_LOCATION = Identifier.withDefaultNamespace("textures/gui/container/stonecutter.png");
-    private static final Identifier SCROLLER_SPRITE = Identifier.withDefaultNamespace("container/stonecutter/scroller");
-    private static final Identifier SCROLLER_DISABLED_SPRITE = Identifier.withDefaultNamespace("container/stonecutter/scroller_disabled");
-    private static final Identifier RECIPE_SELECTED_SPRITE = Identifier.withDefaultNamespace("container/stonecutter/recipe_selected");
-    private static final Identifier RECIPE_HIGHLIGHTED_SPRITE = Identifier.withDefaultNamespace("container/stonecutter/recipe_highlighted");
-    private static final Identifier RECIPE_SPRITE = Identifier.withDefaultNamespace("container/stonecutter/recipe");
+    private static final Identifier SCROLLER_SPRITE = Identifier.fromNamespaceAndPath(SofaiSStuffAndTweaks.MOD_ID, "container/sewingtable/scroller");
+    private static final Identifier SCROLLER_DISABLED_SPRITE = Identifier.fromNamespaceAndPath(SofaiSStuffAndTweaks.MOD_ID, "container/sewingtable/scroller_disabled");
+    private static final Identifier RECIPE_SELECTED_SPRITE = Identifier.fromNamespaceAndPath(SofaiSStuffAndTweaks.MOD_ID, "container/sewingtable/recipe_selected");
+    private static final Identifier RECIPE_HIGHLIGHTED_SPRITE = Identifier.fromNamespaceAndPath(SofaiSStuffAndTweaks.MOD_ID, "container/sewingtable/recipe_highlighted");
+    private static final Identifier RECIPE_SPRITE = Identifier.fromNamespaceAndPath(SofaiSStuffAndTweaks.MOD_ID, "container/sewingtable/recipe");
+    private static final Identifier BG_LOCATION = Identifier.fromNamespaceAndPath(SofaiSStuffAndTweaks.MOD_ID, "textures/gui/sprites/sewingtable.png");
 
     private float scrollOffs;
     private boolean scrolling;
@@ -68,6 +67,8 @@ public class SewingTableScreen extends AbstractContainerScreen<SewingTableMenu> 
 
     @Override
     public void extractBackground(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
+        super.extractBackground(graphics, mouseX, mouseY, partialTick);
+
         int left = this.leftPos;
         int top = this.topPos;
         graphics.blit(RenderPipelines.GUI_TEXTURED, BG_LOCATION, left, top, 0.0F, 0.0F, this.imageWidth, this.imageHeight, 256, 256);
@@ -82,6 +83,8 @@ public class SewingTableScreen extends AbstractContainerScreen<SewingTableMenu> 
         this.extractButtons(graphics, mouseX, mouseY, buttonsLeft, buttonsTop, endIndex);
         this.extractRecipes(graphics, buttonsLeft, buttonsTop, endIndex);
     }
+
+
 
 
     @Override

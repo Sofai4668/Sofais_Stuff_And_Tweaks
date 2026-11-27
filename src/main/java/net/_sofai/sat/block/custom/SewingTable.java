@@ -1,6 +1,7 @@
 package net._sofai.sat.block.custom;
 
 import net._sofai.sat.gui.SewingTableMenu;
+import net._sofai.sat.stat.ModStats;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
@@ -27,7 +28,7 @@ public class SewingTable extends HorizontalDirectionalBlock {
     protected InteractionResult useWithoutItem(final BlockState state, final Level level, final BlockPos pos, final Player player, final BlockHitResult hitResult) {
         if (!level.isClientSide()) {
             player.openMenu(state.getMenuProvider(level, pos));
-            //player.awardStat(Stats.INTERACT_WITH_LOOM);
+            player.awardStat(ModStats.SEWING_TABLE_USED_STAT);
         }
 
         return InteractionResult.SUCCESS;
